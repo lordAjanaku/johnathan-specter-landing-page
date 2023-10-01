@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Prata&display=swap');
+
+:root {
+  --primary-clr-50: hsl(228, 10%, 20%);
+  --primary-clr-100: hsl(240, 5%, 4%);
+  --accent-clr-10: hsl(53, 96%, 65%);
+  --neutral-10: hsl(0, 0%, 100%);
+  --neutral-30: hsl(0, 0%, 75%);
+
+  --primary-ff-100: 'Inter', sans-serif;;
+  --primary-ff-50: 'Prata', serif;;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+p,h1,h2,h3 {
+  color: var(--neutral-10);
+}
+
+h1,
+h2,
+h3{
+  font-family: var(--primary-ff-50);
+  font-weight: 100;
+}
+
+p, a {
+  font-family: var(--primary-ff-100);
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h2 {
+
+  color: var(--neutral-10);
+  line-height: 1.3;
+  font-size: 2rem;
+}
+
+p {
+  color: var(--neutral-30);
+}
+
+header,
+section,
+footer {
+  padding-inline: 10%;
+}
+
+header,
+section:nth-child(1),
+section:nth-child(3) {
+  background-color: var(--primary-clr-100);
+}
+
+section:nth-child(2),
+footer {
+  background-color: var(--primary-clr-50);
+}
+
+section {
+  padding-block: 3rem;
+}
+/* /////////////////////////////   B  L  O  C  K  ///////////////////////////// */
+.logo--wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.nav--wrapper {
+  display: none;
+}
+
+.nav--wrapper-display {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.fortune-500--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  justify-content: center;
+  align-items: center;
+  margin-block: 3rem;
+}
+
+.col--2 {
+  display: grid;
+  gap: 3rem;
+}
+.col--item {
+  display: grid;
+  gap: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+/* /////////////////////////////  E  L  E  M  E  N  T  ///////////////////////////// */
+.nav-items {
+  color: var(--neutral-10);
+  list-style: none;
+  font-family: var(--primary-ff-100);
+  line-height: 2;
+}
+
+.nav-items:hover {
+  color: var(--accent-clr-10);
+}
+
+.logo {
+  color: var(--neutral-10);
+  font-family: var(--primary-ff-50);
+  font-size: 1.2rem;
+}
+
+.booking {
+  display: block;
+  background-color: var(--accent-clr-10);
+  color: var(--primary-clr-100);
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: .3rem;
+}
+
+.booking:hover {
+  background-color: hsl(53, 55%, 51%);
+}
+
+.hero-title {
+  margin-bottom: 1rem;
+}
+
+.hero-title + p {
+  color: var(--neutral-30);
+}
+
+section:nth-child(3) > .booking {
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.social-icon--wrapper {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+
+footer > span {
+  font-size: 1.2rem;
+  color: var(--neutral-10);
+}
+
+/* /////////////////////////////  M  O   D   E   L  ///////////////////////////// */
+
+@media screen and (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .web--screenshot {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  header {
+    display: flex;
+    align-items: center;
+    /* gap: 5rem; */
+    padding-block: 2rem;
+  }
+
+  .toggle-icon {
+    display: none;
+  }
+
+  .nav--wrapper {
+    margin-left: 10%;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav--wrapper a {
+    padding: 1rem;
+  }
+
+  .nav {
+    display: flex;
+    gap: 3.5rem;
+  }
+
+  .col--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

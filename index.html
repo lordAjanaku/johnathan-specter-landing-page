@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo--wrapper">
+            <span class="logo">Johnathan Specter</span>
+            <img src="./Assets/Hamburger Menu.svg" alt="" id="toggle-icon" onclick="toggleMenu()">
+        </div>
+
+        <div id="navigation" class="nav--wrapper">
+            <ul>
+                <li class="nav-items">Articles</li>
+                <li class="nav-items">Chats</li>
+                <li class="nav-items">Awards</li>
+                <li class="nav-items">About</li>
+            </ul>
+            <a href="#" class="booking">Get in touch</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="hero-section">
+                <h1 class="hero-title">Helping companies build better, scalable software.</h1>
+                <p>Award-winning web development and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook, and more.
+                </p>
+            </div>
+            <div class="fortune-500--wrapper">
+                <img src="./Assets/Logos/Walmart.svg" alt="Walmart" class="fortune-500--logo">
+                <img src="./Assets/Logos/JP Morgan.svg" alt="JP Morgan" class="fortune-500--logo">
+                <img src="./Assets/Logos/Visa.svg" alt="Visa" class="fortune-500--logo">
+                <img src="./Assets/Logos/Tinder.svg" alt="Tinder" class="fortune-500--logo">
+                <img src="./Assets/Logos/Samsung.svg" alt="Samsung" class="fortune-500--logo">
+                <img src="./Assets/Logos/Verizon.svg" alt="Verizon" class="fortune-500--logo">
+            </div>
+            <div class="2-col">
+                <div class="col--item">
+                    <img src="" alt="" class="web--screenshot">
+                    <h2>Spense.com</h2>
+                    <p>Rethinking the way writers get paid, an open-source platform designed to Help
+                    writers focus more on writing, and less on when and how they'll get paid> Project in collacoration with Codewell.cc 
+                    </p>
+                </div>
+                <div class="col--item">
+                    <img src="" alt="" class="web--screenshot">
+                    <h2>YelpCamp.com</h2>
+                    <p>Allowing backpack travelers to perfectly plan their trip through an open-source platform similar to TripAdvisor.
+                    with over 1m MAU, YelpCamp has been the crowd's favourite in 2021.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="2-col">
+                <div class="col--item">
+                    <h2>A co-founder at one of the world's largest communities.</h2>
+                    <p> The combined experience I have working at the top Fortune SOO companies has allowed me to developer a skillset that helps me in not just development, but in every aspect of any business. </p>
+                    <p> I'm proud to announce that I am now working at one of the world's largest communities teaching young minds about how to sell yourself as a developer and open them to a wh01e new world of opportunities.</p>
+                </div>
+                <div class="col--item">
+                    <p>As a developer, you have everything available to you and all that's holding you back is yourself.</p>
+                    <p>A quote I live by perfectly illustrates what I mean. "How big would you dream, if you knew you wouldn't fail?" You've already gone through the hardest parts being a developer, it's time to elevate your skills and become a leader in something you're passionate about.</p>
+                    <p>I'm happy to chat over coffee some time about how I can help your company</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Interested in working with me?</h2>
+            <p> I'm active on all social media platforms listed below, but you can also me an email and I will get back to you within 24-48 hours.</p>
+            <a href="#" class="booking">Get in touch</a> 
+        </section>
+    </main>
+    <footer>
+        <span>Johnathan Specter</span>
+        <div class="social-icon--wrapper">
+            <img src="./Assets/Social Icons/Twitter.svg" alt="" class="social-icon">
+            <img src="./Assets/Social Icons/LinkedIn.svg" alt="" class="social-icon">
+            <img src="./Assets/Social Icons/Github.svg" alt="" class="social-icon">
+        </div>
+    </footer>
+</body>
+<script>
+    function toggleMenu() {
+        // var icon = document.getElementsById("toggle-icon");
+        // icon.setAttribute("src", "./Assets/cancel.svg");
+
+        function toggle() {
+            var menu = document.getElementById("navigation");
+
+            if(menu.classList.contains("nav--wrapper")) {
+                menu.classList.remove("nav--wrapper");
+                menu.classList.add("nav--wrapper-display");
+            } else {
+                menu.classList.remove("nav--wrapper-display");
+                menu.classList.add("nav--wrapper");
+            }
+        } toggle();     
+    }
+</script>
+</html>
