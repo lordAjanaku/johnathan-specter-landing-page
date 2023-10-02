@@ -207,7 +207,7 @@ footer > span {
   }
 
   .hero-section {
-    max-width: 300px;
+    width: 300px;
   }
 
   .toggle-icon {
