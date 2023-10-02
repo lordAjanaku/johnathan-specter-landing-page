@@ -15,6 +15,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  
   margin: 0;
   padding: 0;
 }
@@ -203,6 +204,10 @@ footer > span {
     align-items: center;
     /* gap: 5rem; */
     padding-block: 2rem;
+  }
+
+  .hero-section {
+    max-width: 70ch
   }
 
   .toggle-icon {
